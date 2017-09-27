@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>尚合</title>
+	<style type="text/css">
+*{
+margin:0;
+padding:0;
+}
+
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.head-t {
+	height: 60px;
+	
+}
+.head-z {
+	width: 980px;
+	height: 60px;
+	/*background-color: yellow;*/
+	margin: 0 auto;
+}
+.head-z img {
+	margin-top: 20px;
+	float: left;
+}
+.head-z .kuang {
+	width: 200px;
+	height: 31px;
+	margin-top: 20px;
+	background-color: #f4f4f4;
+	/*border: 1px solid #d2d2d2;*/
+	float: right;
+	border-radius: 5px;
+}
+.head-z .kuang .shuru {
+	width: 167px;
+    height: 31px;
+    background:url(input.png) no-repeat;
+    float: left;
+    border: 0;
+    outline: none;  /* 取消蓝色边框 */
+    border-radius: 5px;
+}
+.head-z .kuang .anniu {
+	width: 33px;
+	height: 31px;
+	float: left;
+	border: 0;
+	border-radius: 5px;
+	/*margin-right: 2px;*/
+	background: url(button.png) center center no-repeat;
+}
+
+.daohang {
+
+	height: 55px;
+	background-image: url(nav-bg.png);
+}
+.daohang-z {
+	width: 980px;
+	height: 55px;
+	margin:0 auto;
+	
+
+}
+.daohang-z a {
+	width: 130px;
+	height: 55px;
+	float: left;
+	text-align: center;
+	line-height: 56px;
+	color: #000;
+	font-size:14px;
+	font-weight: 700;
+}
+.daohang-z span {
+	width: 2px;
+	height: 55px;
+	float: left;
+}
+.daohang-z a:hover {
+	color: #caf148;
+}
+.daohang-z a.ping,
+.daohang-z a.pei{
+	position: relative;
+
+}
+.daohang-z a.ping img,
+.daohang-z a.pei img {
+	position:absolute;
+	right:65px;
+	margin-right:-13px;
+	top:-16px;
+}
+/*中间背景*/
+.zhongxin {
+	width: 980px;
+	height: 601px;
+	margin: 0 auto;
+	background:url(banner.png) no-repeat; 
+	position: relative;
+	
+}
+.zhongxin img {
+	width: 106px;
+	height: 148px;
+	position: absolute;/*二维码的绝对定位*/
+	top: 14px;
+	left: 995px;
+}
+/*最新公告*/
+.zui {
+	height: 30px;
+	margin-bottom: 17px;
+	background-color: #FBFBFB;
+	border-top:1px solid #EFEFEF;
+	border-bottom: 1px solid #EFEFEF; 
+}
+.zui-z {
+	width: 980px;
+	height: 30px;
+	margin: 0 auto;
+	font-size: 12px;
+	line-height: 30px;
+}
+.zui-z span {
+	font-weight: 700;
+	
+}
+.zui-z img {
+	margin-top: 5px;
+	float: right;
+}
+/*三个栏*/
+.san {
+	width: 980px;
+	height: 224px;
+	margin: 0 auto;
+
+}
+/*新品发布*/
+.xinpin {
+	width: 310px;
+	height: 224px;
+	border: 1px solid #E4E4E4;
+	float: left;
+	margin-right: 12px;
+	background: url(pic.png) center center no-repeat;
+}
+.xinpin span {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 5px;
+	font-size: 12px;
+	color: #7AB800;
+	font-weight: 700;
+}
+.xinpin span img {
+	margin-right: 8px;
+}
+/*新闻中心*/
+.xinwen {
+	width: 370px;
+	height: 224px;
+	border: 1px solid #E4E4E4;
+	float: left;
+	margin-right: 10px;
+}
+.xinwen span {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #7AB800;
+	font-weight: 700;
+}
+.xinwen span img {
+	margin-right: 8px;
+}
+.xinwen ul {
+	padding:0 25px; 
+}
+.xinwen ul li {
+	line-height: 26px;
+	border-bottom: 1px dashed #DCDCDC;
+}
+.xinwen ul li a {
+	font-size: 12px;
+	color: #666666;
+
+}
+.xinwen ul li:first-child a {
+	color: red;
+}
+
+.xinwen ul li a:hover {
+	text-decoration: underline;
+	color:#7AB800; 
+}
+.xinwen a.cha {
+	float: right;
+	font-size: 12px;
+	color:#7AB800;
+	margin-top: 10px;
+	margin-right: 5px;
+	font-weight: 700; 
+}
+.jishu {
+	width: 270px;
+	height: 224px;
+	float: left;
+	border: 1px solid #E4E4E4;
+}
+
+
+.jishu span {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #7AB800;
+	font-weight: 700;
+}
+.jishu span img {
+	margin-right: 8px;
+}
+.jishu ul {
+	padding: 2px 28px;
+
+}
+.jishu ul li {
+    line-height: 20px;
+}
+
+.jishu ul li a {
+		/*display: inline-block;*/
+		font-size: 12px;
+		color: #666666;
+		padding-left: 5px;
+        border-left: 3px solid #7AB800;
+	}
+	.jishu div.jishu-w {
+		font-size: 12px;
+		color:#666;
+		margin-left: 28px;
+		margin-top: 43px;
+	}
+	/*结尾栏*/
+	.jiewei {
+		margin-top: 50px;
+		height: 307px;
+		background-color: #2D2D2D;
+		box-shadow: 0px 7px 6px 2px rgba(0,0,0,0.3) inset;
+	}
+	.jiewei-z {
+		width: 980px;
+		height: 223px;
+		margin: 0 auto;
+		
+	}
+	.jiewei-z dl {
+		float: left;
+		margin-right: 55px;
+		margin-top: 15px;
+	}
+	.jiewei-z dt {
+		font-size: 14px;
+		font-weight: 700;
+		margin-bottom: 20px;
+		color: #C7C7C7;
+		
+	}
+	.jiewei-z dd a{
+		font-size: 12px;
+        color: #707070;
+
+	}
+	.jiewei-z dl:first-child {
+		margin-left: 18px;
+	}
+	.jiewei-z dd a:hover {
+		text-decoration: underline;
+	}
+	.jiewei-z img {
+		float: right;
+	}
+	.jiewei-e {
+       height: 84px;
+       border-top: 1px dashed #414141;
+       text-align: center;
+       font-size: 12px;
+       /*line-height: 84px;*/
+	}
+	.jiewei-e span {
+		margin-top: 16px;
+		display: inline-block;
+	}
+
+.jiewei-e .jiewei-i{
+	margin-top:8px; 
+}
+</style>
+</head>
+<body>
+	<!-- 头部通栏 -->
+	<div class="head-t">
+	<!-- 头部中心框 -->
+		<div class="head-z">
+			<img src="logo.png" alt="">
+            <div class="kuang">
+			<input type="text" placeholder="请输入内容" class="shuru" />
+			<input tyle="submit" value="" class="anniu" />
+		</div>
+		</div>
+	</div>
+	<!-- 导航 -->
+	<div class="daohang">
+	<!-- 导航的中心框 -->
+		<div class="daohang-z">
+			<a href="#">首页</a><span><img src="nav-line.png" alt=""></span>
+			<a href="#">智能手机</a><span><img src="nav-line.png" alt=""></span>
+			<a href="#" class="ping">平板电脑<img src="hot.png" alt=""></a><span><img src="nav-line.png" alt=""></span>
+			<a href="#"class="pei">配件<img src="new.png" alt=""></a><span><img src="nav-line.png" alt=""></span>
+			<a href="#">服务支持</a><span><img src="nav-line.png" alt=""></span>
+			<a href="#">关于尚合</a><span><img src="nav-line.png" alt=""></span>
+		</div>
+	</div>
+	<!-- 大图中间背景 -->
+	<div class="zhongxin">
+		<img src="erweima.png" alt="">
+	</div>
+	<!-- 最新公告 -->
+	<div class="zui">
+	<div class="zui-z">
+		<span>最新公告:</span> 尚合Aone智能手机入网证已经获工信部门审批下发。尚合官方
+		<img src="share.png" alt="">
+	</div>
+	</div>
+	<!-- 三个栏 -->
+	<div class="san">
+		<div class="xinpin">
+			<span><img src="arrow.png" alt="">新品发布</span>
+		</div>
+
+		<div class="xinwen">
+			<span><img src="arrow.png" alt="">新闻中心</span>
+			<!-- 链接更多 -->
+			<a href="#" class="cha">更多</a>
+			<ul>
+				<li><a href="#">致歉公告</a></li>
+				<li><a href="#">首批尚合Aonet已全部售馨!</a></li>
+				<li><a href="#">【媒体报导】国产高性价比 尚合Aonet四核手机评测</a></li>
+				<li><a href="#">我司产品已经通过了国家强制性产品3C认证</a></li>
+				<li><a href="#">尚合Aone智能手机入网证已经获工信部门审批下发.</a></li>
+				<li><a href="#">我司通过ISO9001:2008国际质量管理体系认证.</a></li>
+			</ul>
+		</div>
+		<div class="jishu">
+			<span><img src="arrow.png" alt="">技术支持</span>
+
+			<ul>
+				<li><a href="#">售后服务</a> </li>
+				<li><a href="#">投诉与建议</a></li>
+
+				<li><a href="#">联保网点</a></li>
+				<li><a href="#">常见问题FAQ？</a></li>
+
+			</ul>
+			<div class="jishu-w">
+				深圳市汇聚众合科技发展有限公司<br /> 
+服务热线：400-633-7922
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- 结尾栏 -->
+	<div class="jiewei">
+		<div class="jiewei-z">
+			<dl>
+				<dt>尚合首页</dt>
+				<dd><a href="#">返回首页</a></dd>
+			</dl>
+			<dl>
+				<dt>智能手机</dt>
+				<dd><a href="#">Aone-T</a></dd>
+				<dd><a href="#">Aone</a></dd>
+			</dl>
+			<dl>
+				<dt>平板电脑</dt>
+				<dd><a href="#">尚PAD S200</a></dd>
+				<dd><a href="#">尚PAD S100</a></dd>
+				<dd><a href="#">尚PAD SH-Q7</a></dd>
+				<dd><a href="#">尚PAD SH-Q5</a></dd>
+			</dl>
+			<dl>
+				<dt>平板电脑</dt>
+				<dd><a href="#">尚PAD S200</a></dd>
+				<dd><a href="#">尚PAD S100</a></dd>
+				<dd><a href="#">尚PAD SH-Q7</a></dd>
+				<dd><a href="#">尚PAD SH-Q5</a></dd>
+			</dl>
+			<dl>
+				<dt>平板电脑</dt>
+				<dd><a href="#">尚PAD S200</a></dd>
+				<dd><a href="#">尚PAD S100</a></dd>
+				<dd><a href="#">尚PAD SH-Q7</a></dd>
+				<dd><a href="#">尚PAD SH-Q5</a></dd>
+			</dl>
+			<dl>
+				<dt>平板电脑</dt>
+				<dd><a href="#">尚PAD S200</a></dd>
+				<dd><a href="#">尚PAD S100</a></dd>
+				<dd><a href="#">尚PAD SH-Q7</a></dd>
+				<dd><a href="#">尚PAD SH-Q5</a></dd>
+			</dl>
+			<dl>
+				<dt>平板电脑</dt>
+				<dd><a href="#">尚PAD S200</a></dd>
+				<dd><a href="#">尚PAD S100</a></dd>
+				<dd><a href="#">尚PAD SH-Q7</a></dd>
+				<dd><a href="#">尚PAD SH-Q5</a></dd>
+			</dl>
+			<img src="back.png" alt="">
+		</div>
+		<div class="jiewei-e">
+			©2011-2012版权所有 深圳市汇聚众合科技发展有限公司 （品牌：尚合-SAMHAVE） 服务热线：400-633-7922 <br />
+<span>经营许可证编号：粤ICP备11077821号-1</span>
+	<div class="jiewei-i">
+		<img src="icon1.png" alt="">
+		<img src="icon2.png" alt="">
+	</div>
+		</div>
+	</div>
+</body>
+</html>
